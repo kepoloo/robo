@@ -539,7 +539,7 @@ def kayo(update: Update, context: CallbackContext):
     site_search(update, context, "kayo")
 
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /anime <anime>* ➥* ʀᴇᴛᴜʀɴs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴀɴɪᴍᴇ.
  ⬤ /character <ᴄʜᴀʀᴀᴄᴛᴇʀ>* ➥* ʀᴇᴛᴜʀɴs ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ.
@@ -568,7 +568,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "ᴀɴɪᴍᴇ"
+__MODULE__ = "ᴀɴɪᴍᴇ"
 
 __command_list__ = [
     "anime",
