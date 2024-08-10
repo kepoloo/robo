@@ -3,9 +3,9 @@ import time
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from AvishaRobot import dispatcher,OWNER_ID
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.chat_status import user_admin
+from VIPMUSIC import dispatcher,OWNER_ID
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.chat_status import user_admin
 
 
 #sleep how many times after each edit in 'blockanimation' 
