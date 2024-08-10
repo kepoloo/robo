@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
 import requests
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from AvishaRobot import pbot as app
+from VIPMUSIC import pbot as app
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"f"https://t.me/{app.username}?startgroup=true"),
     ],
 ]
 
@@ -23,16 +23,16 @@ async def bored_command(client, message):
         activity = data.get("activity")
         if activity:
             # Send the activity to the user who triggered the command
-            await message.reply(f"❖ ғᴇᴇʟɪɴɢ ʙᴏʀᴇᴅ ? ʜᴏᴡ ᴀʙᴏᴜᴛ ⏤͟͟͞͞★\n\n❅ `{activity}`\n\n❖ ғᴇᴇʟɪɴɢ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ♡゙](htps://t.me/the_friendz)", reply_markup=InlineKeyboardMarkup(EVAA),)
+            await message.reply(f"❖ ғᴇᴇʟɪɴɢ ʙᴏʀᴇᴅ ? ʜᴏᴡ ᴀʙᴏᴜᴛ ⏤͟͟͞͞★\n\n❅ `{activity}`\n\n❖ ғᴇᴇʟɪɴɢ ʙʏ ➥ [αиσиумσυѕ χ мυѕι¢](htps://t.me/jooxstream)", reply_markup=InlineKeyboardMarkup(EVAA),)
         else:
             await message.reply("⬤ ɴᴏ ᴀᴄᴛɪᴠɪᴛʏ ғᴏᴜɴᴅ.")
     else:
         await message.reply("⬤ ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴀᴄᴛɪᴠɪᴛʏ.")
 
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /bored * ➥* ɢᴇᴛ ʀᴀɴᴅᴏᴍ ʙᴏʀᴇᴅ ғᴇᴇʟɪɴɢs.
 """
 
-__mod_name__ = "ғᴇᴇʟɪɴɢs"
+__MODULE__ = "ғᴇᴇʟɪɴɢs"
