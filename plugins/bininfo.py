@@ -1,12 +1,12 @@
-from AvishaRobot import *
+from VIPMUSIC import *
 from pyrogram import *
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.types import *
-from AvishaRobot import pbot as app 
+from VIPMUSIC import pbot as app 
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ", url=f"f"https://t.me/{app.username}?startgroup=true"),
     ],
 ]
 
@@ -45,7 +45,7 @@ async def check_ccbin(client, message):
 ⬤ ʙɪɴ ɴᴏᴛ ʀᴇᴄᴏɢɴɪᴢᴇᴅ, ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟɪᴅ ʙɪɴ.""")
 
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /gen ➥ ɢᴇɴʀᴀᴛᴇ ᴄʀᴇᴅɪᴛ ᴄᴀʀᴅs [● ᴇx ➣ /ɢᴇɴᴄᴄ 123456]
 ⬤ /bininfo ➥ ʙɪɴ ᴅᴇᴛᴀɪʟs [● ᴇx ➣ /ʙɪɴɪɴғᴏ 123456]
@@ -55,4 +55,4 @@ __help__ = """
 ⬤ /fakegen ➥ ᴜsᴇʀ ғᴀᴋᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
 """
 
-__mod_name__ = "ᴄᴄ ʙɪɴ"
+__MODULE__ = "ᴄᴄ ʙɪɴ"
