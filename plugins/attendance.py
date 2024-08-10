@@ -2,9 +2,9 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Filters
 from telegram.utils.helpers import mention_markdown, escape_markdown
 
-from AvishaRobot import dispatcher
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from VIPMUSIC import dispatcher
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 
 
 @user_admin
@@ -121,7 +121,7 @@ def end_attendance_cmd(update, context):
         context.chat_data['flag'] = 0
         context.chat_data['attendees'].clear()
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /attendance ➥ ꜱᴛᴀʀᴛ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
 ⬤ /end_attendance ➥ ᴇɴᴅ ᴛʜᴇ ᴀᴛᴛᴇɴᴅᴀɴᴄᴇ
@@ -137,7 +137,7 @@ dispatcher.add_handler(MARK_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE)
 dispatcher.add_handler(END_ATTENDANCE_CMD)
 
-__mod_name__ = "ᴘʀᴇsᴇɴᴛ"
+__MODULE__ = "ᴘʀᴇsᴇɴᴛ"
 
 __command_list__ = ["attendance", "end_attendance"]
 __handlers__ = [START_ATTENDANCE, END_ATTENDANCE, END_ATTENDANCE_CMD]
