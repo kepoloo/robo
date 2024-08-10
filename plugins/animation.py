@@ -476,7 +476,7 @@ dispatcher.add_handler(MOONANIMATION_HANDLER)
 dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BRAINANIMATION_HANDLER)
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /love ➥ ᴜsᴇ ɪᴛ ɪғ ᴜ ʜᴀᴠᴇ ɢɪʀʟғʀɪᴇɴᴅ.
  ⬤ /hack ➥ ᴛᴏ ʜᴀᴄᴋ ᴀɴʏ ᴜsᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ.
@@ -486,4 +486,4 @@ __help__ = """
  ⬤ /flag ➥ sᴏᴍᴇ ᴄᴏᴜɴᴛʀʏ ғʟᴀɢ.
  ⬤ /police ➥ ᴛᴏ ᴄᴀʟʟ ᴍᴀsᴛᴇʀᴍɪɴᴅ ᴘᴏʟɪᴄᴇ.
 """
-__mod_name__ = "ᴀɴɪᴍᴀᴛɪᴏɴ"
+__MODULE__ = "ᴀɴɪᴍᴀᴛɪᴏɴ"
