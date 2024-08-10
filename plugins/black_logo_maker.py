@@ -6,15 +6,15 @@ import glob
 import time
 import requests
 
-from AvishaRobot.events import register
-from AvishaRobot import OWNER_ID, BOT_USERNAME, BOT_NAME
-from AvishaRobot import telethn as tbot
-from AvishaRobot.modules.nightmode import button_row
+from VIPMUSIC.events import register
+from VIPMUSIC import OWNER_ID, BOT_USERNAME, BOT_NAME
+from VIPMUSIC import telethn as tbot
+from VIPMUSIC.modules.nightmode import button_row
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from io import BytesIO
 from requests import get
-from AvishaRobot import SUPPORT_CHAT
+from VIPMUSIC import SUPPORT_CHAT
 
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
@@ -1723,7 +1723,7 @@ async def lego(event):
     pointsize = 350
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob("./AvishaRobot/resources/fonts/*")
+    fnt = glob.glob("./VIPMUSIC/resources/fonts/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 120)
     w, h = draw.textsize(text, font=font)
@@ -1733,7 +1733,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
-    fname="avisha.png"
+    fname="vip.png"
     img.save(fname, "png")
     await tbot.send_file(event.chat_id, file=fname, caption=f"❖ ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ➥ [{BOT_NAME}](https://t.me/{BOT_USERNAME})",buttons=button_row)         
     await pesan.delete()
