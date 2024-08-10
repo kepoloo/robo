@@ -10,7 +10,7 @@ from pyrogram.types import *
 button = [
        [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AvishaXbot?startgroup=true",
+                text="ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/AvishaXbot?startgroup=true",
             )
         ]
 ]
@@ -33,9 +33,9 @@ async def logo(app, msg: Message):
 
 #######
 
-__mod_name__ = "ᴀ-ʟᴏɢᴏ"
+__MODULE__ = "ʟᴏɢᴏ"
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /animelogo ➥ ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴛᴇxᴛ ᴀɴɪᴍᴇ ʟᴏɢᴏ.
  ⬤ /xlogo ➥ ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴛᴇxᴛ ʟᴏɢᴏ.
