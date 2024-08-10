@@ -391,9 +391,9 @@ async def chat_watcher_func(_, message):
         except:
             return
 
-__mod_name__ = "ᴀғᴋ"
+__MODULE__ = "ᴀғᴋ"
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /afk <reason> *➥* ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs ᴀғᴋ.
 ⬤ brb, !afk <reason> *➥* sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ.
