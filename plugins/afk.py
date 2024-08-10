@@ -1,11 +1,11 @@
 import time, re
-from AvishaRobot import BOT_USERNAME
+from VIPMUSIC import BOT_USERNAME
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from AvishaRobot import pbot as app
-from AvishaRobot.Love.readable_time import get_readable_time
-from AvishaRobot.Love.afkdb import add_afk, is_afk, remove_afk
+from VIPMUSIC import pbot as app
+from VIPMUSIC.Love.readable_time import get_readable_time
+from VIPMUSIC.Love.afkdb import add_afk, is_afk, remove_afk
 import random 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -15,20 +15,7 @@ EVAA = [
     ],
 ]
 
-POLICE = [
-"https://graph.org/file/eaa3a2602e43844a488a5.jpg",
-"https://graph.org/file/b129e98b6e5c4db81c15f.jpg",
-"https://graph.org/file/3ccb86d7d62e8ee0a2e8b.jpg",
-"https://graph.org/file/df11d8257613418142063.jpg",
-"https://graph.org/file/9e23720fedc47259b6195.jpg",
-"https://graph.org/file/826485f2d7db6f09db8ed.jpg",
-"https://graph.org/file/ff3ad786da825b5205691.jpg",
-"https://graph.org/file/52713c9fe9253ae668f13.jpg",
-"https://graph.org/file/8f8516c86677a8c91bfb1.jpg",
-"https://graph.org/file/6603c3740378d3f7187da.jpg",
-"https://graph.org/file/66cb6ec40eea5c4670118.jpg",
-"https://graph.org/file/2e3cf4327b169b981055e.jpg",
-]
+POLICE = []
 
 @app.on_message(filters.command(["afk"], prefixes=["/", "!", ""]))
 async def active_afk(_, message: Message):
