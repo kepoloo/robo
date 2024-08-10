@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-import AvishaRobot.modules.sql.approve_sql as sql
-from AvishaRobot import DRAGONS, dispatcher
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.chat_status import user_admin
-from AvishaRobot.modules.helper_funcs.extraction import extract_user
-from AvishaRobot.modules.log_channel import loggable
+import VIPMUSIC.modules.sql.approve_sql as sql
+from VIPMUSIC import DRAGONS, dispatcher
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.chat_status import user_admin
+from VIPMUSIC.modules.helper_funcs.extraction import extract_user
+from VIPMUSIC.modules.log_channel import loggable
 
 
 @loggable
@@ -191,7 +191,7 @@ def unapproveall_btn(update: Update, context: CallbackContext):
             query.answer("❐ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴅᴏ ᴛʜɪs.")
 
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /approval *➥* ᴄʜᴇᴄᴋ ᴀ ᴜsᴇʀ's ᴀᴘᴘʀᴏᴠᴀʟ sᴛᴀᴛᴜs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.
 ⬤ /approve *➥* ᴀᴘᴘʀᴏᴠᴇ ᴏғ ᴀ ᴜsᴇʀ. ʟᴏᴄᴋs, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴀɴᴛɪғʟᴏᴏᴅ ᴡᴏɴ'ᴛ ᴀᴘᴘʟʏ ᴛᴏ ᴛʜᴇᴍ ᴀɴʏᴍᴏʀᴇ.
@@ -216,6 +216,6 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
-__mod_name__ = "ᴀᴘᴘʀᴏᴠᴇ"
+__MODULE__ = "ᴀᴘᴘʀᴏᴠᴇ"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]
