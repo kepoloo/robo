@@ -1,4 +1,4 @@
-from AvishaRobot import LOAD, LOGGER, NO_LOAD
+from VIPMUSIC import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
