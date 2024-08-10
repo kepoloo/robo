@@ -6,16 +6,16 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import AvishaRobot.modules.sql.blsticker_sql as sql
-from AvishaRobot import LOGGER, dispatcher
-from AvishaRobot.modules.connection import connected
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.alternate import send_message
-from AvishaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AvishaRobot.modules.helper_funcs.misc import split_message
-from AvishaRobot.modules.helper_funcs.string_handling import extract_time
-from AvishaRobot.modules.log_channel import loggable
-from AvishaRobot.modules.warns import warn
+import VIPMUSIC.modules.sql.blsticker_sql as sql
+from VIPMUSIC import LOGGER, dispatcher
+from VIPMUSIC.modules.connection import connected
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.alternate import send_message
+from VIPMUSIC.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from VIPMUSIC.modules.helper_funcs.misc import split_message
+from VIPMUSIC.modules.helper_funcs.string_handling import extract_time
+from VIPMUSIC.modules.log_channel import loggable
+from VIPMUSIC.modules.warns import warn
 
 
 def blackliststicker(update: Update, context: CallbackContext):
@@ -488,7 +488,7 @@ def __stats__():
     )
 
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /blsticker* ➥* sᴇᴇ ᴄᴜʀʀᴇɴᴛ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ sᴛɪᴄᴋᴇʀ
 
@@ -499,7 +499,7 @@ __help__ = """
  ⬤ <sticker link > ᴄᴀɴ ʙᴇ `https://t.me/addstickers//<sticker>` ᴏʀ ᴊᴜsᴛ `<sticker>` ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ᴍᴇssᴀɢᴇ
 """
 
-__mod_name__ = "sᴛɪᴄᴋᴇʀ"
+__MODULE__ = "sᴛɪᴄᴋᴇʀ"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True, run_async=True
