@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from AvishaRobot import (
+from VIPMUSIC import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -15,8 +15,8 @@ from AvishaRobot import (
     WOLVES,
     dispatcher,
 )
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.chat_status import (
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
     can_restrict,
@@ -27,9 +27,9 @@ from AvishaRobot.modules.helper_funcs.chat_status import (
     user_admin,
     user_can_ban,
 )
-from AvishaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from AvishaRobot.modules.helper_funcs.string_handling import extract_time
-from AvishaRobot.modules.log_channel import gloggable, loggable
+from VIPMUSIC.modules.helper_funcs.extraction import extract_user_and_text
+from VIPMUSIC.modules.helper_funcs.string_handling import extract_time
+from VIPMUSIC.modules.log_channel import gloggable, loggable
 
 
 @connection_status
@@ -396,7 +396,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
 
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /kickme *➥* ᴋɪᴄᴋs ᴛʜᴇ ᴜsᴇʀ ᴡʜᴏ ɪssᴜᴇᴅ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
 
@@ -423,7 +423,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 
-__mod_name__ = "ʙᴀɴ"
+__MODULE__ = "ʙᴀɴ"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
