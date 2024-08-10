@@ -139,9 +139,9 @@ dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
-__mod_name__ = "ᴀ-ǫᴜᴏᴛᴇ"
+__MODULE__ = "ᴀ-ǫᴜᴏᴛᴇ"
 
-__help__ = """
+__HELP__ = """
 
 ⬤ /quote ➥ ʀᴀɴᴅᴏᴍ ʟɪғᴇ ǫᴜᴏᴛᴇs.
 ⬤ /aq ➥ ʀᴀɴᴅᴏᴍ ᴀɴɪᴍᴇ ǫᴜᴏᴛᴇs.
