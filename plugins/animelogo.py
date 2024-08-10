@@ -4,7 +4,7 @@ from pyrogram import Client, filters, idle
 import pyrogram, asyncio, random, time
 from pyrogram.errors import FloodWait
 import requests
-from AvishaRobot import pbot as app
+from VIPMUSIC import pbot as app
 from pyrogram.types import *
 
 button = [
