@@ -5,8 +5,8 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
-from AvishaRobot import dispatcher,OWNER_ID
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC import dispatcher,OWNER_ID
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
 
 
 def anime_quote():
@@ -139,7 +139,7 @@ dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
-__MODULE__ = "ᴀ-ǫᴜᴏᴛᴇ"
+__MODULE__ = "ǫᴜᴏᴛᴇ"
 
 __HELP__ = """
 
