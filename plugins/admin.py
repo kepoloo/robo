@@ -1,7 +1,8 @@
 import html
 import os
 from pyrogram import filters,enums
-from VIPMUSIC import DRAGONS, dispatcher,OWNER_ID,pbot
+from VIPMUSIC import DRAGONS, dispatcher, pbot
+from VIPMUSIC import OWNER_ID
 from VIPMUSIC.modules.disable import DisableAbleCommandHandler
 from VIPMUSIC.modules.helper_funcs.admin_rights import user_can_changeinfo
 from VIPMUSIC.modules.helper_funcs.alternate import send_message
