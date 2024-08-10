@@ -2,7 +2,7 @@ import json
 import requests
 from pyrogram import Client, filters
 from pyrogram.types import InputMediaPhoto, Message
-from AvishaRobot import pbot as app
+from VIPMUSIC import pbot as app
 
 
 @app.on_message(filters.command("bimg"))
@@ -39,13 +39,13 @@ def bingimg_search(client: Client, message: Message):
     message.delete()
 ####
 
-__mod_name__ = "ɪᴍᴀɢᴇ"
+__MODULE__ = "ɪᴍᴀɢᴇ"
 
-__help__ = """
+__HELP__ = """
 
  ⬤ /bimg ➥ sᴇᴀʀᴄʜ ᴘɪɴᴛᴇʀᴇsᴛ ɪᴍᴀɢᴇs ᴄᴏʟʟᴇᴄᴛɪᴏɴ.
  ⬤ /img ➥ sᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ ɪᴍᴀɢᴇs ᴄᴏʟʟᴇᴄᴛɪᴏɴ.
  ⬤ /rp ➥ ʀᴀɴᴅᴏᴍ ᴡᴀʟʟᴘᴀᴘᴇʀ ɪᴍᴀɢᴇ.
- ⬤ /pic <query> ➥ sᴇᴀʀᴄʜ ᴏᴡɴ ǫᴜᴇʀʏ ɪᴍᴀɢᴇ [● ᴇx ➣ /pic Tajmahal].
+ ⬤ /pic <query> ➥ sᴇᴀʀᴄʜ ᴏᴡɴ ǫᴜᴇʀʏ ɪᴍᴀɢᴇ [● ᴇx ➣ /pic Dubai].
  """
 
