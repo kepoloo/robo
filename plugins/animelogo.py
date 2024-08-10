@@ -20,13 +20,13 @@ button = [
 @app.on_message(filters.command("animelogo"))
 async def logo(app, msg: Message):
     if len(msg.command) == 1:
-       return await msg.reply_text("⬤ ᴜsᴀɢᴇ ➥ /animelogo Avisha")
+       return await msg.reply_text("⬤ ᴜsᴀɢᴇ ➥ /animelogo Girl Sexy")
     logo_name = msg.text.split(" ", 1)[1]
     API = f"https://api.sdbots.tech/anime-logo?name={logo_name}"
     req = requests.get(API).url
     await msg.reply_photo(
         photo=f"{req}",
-        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/the_friendz)",
+        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [αиσиумσυѕ χ мυѕι¢](https://t.me/JooxSupport)",
         reply_markup=InlineKeyboardMarkup(button),
     )
 
