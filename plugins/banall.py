@@ -1,7 +1,7 @@
 from telethon.tl.types import ChatBannedRights
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon import events
-from AvishaRobot import telethn as tbot, DEV_USERS
+from VIPMUSIC import telethn as tbot, DEV_USERS
 
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
