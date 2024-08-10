@@ -6,11 +6,11 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 from pyrogram import filters,enums
-from AvishaRobot import DRAGONS, dispatcher,OWNER_ID,pbot
-from AvishaRobot.modules.disable import DisableAbleCommandHandler
-from AvishaRobot.modules.helper_funcs.admin_rights import user_can_changeinfo
-from AvishaRobot.modules.helper_funcs.alternate import send_message
-from AvishaRobot.modules.helper_funcs.chat_status import (
+from VIPMUSIC import DRAGONS, dispatcher,OWNER_ID,pbot
+from VIPMUSIC.modules.disable import DisableAbleCommandHandler
+from VIPMUSIC.modules.helper_funcs.admin_rights import user_can_changeinfo
+from VIPMUSIC.modules.helper_funcs.alternate import send_message
+from VIPMUSIC.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
     can_pin,
@@ -18,11 +18,11 @@ from AvishaRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
 )
-from AvishaRobot.modules.helper_funcs.extraction import (
+from VIPMUSIC.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AvishaRobot.modules.log_channel import loggable
+from VIPMUSIC.modules.log_channel import loggable
 
 
 @bot_admin
